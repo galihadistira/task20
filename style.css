@@ -1,0 +1,216 @@
+body {
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #004080, #0066cc);
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+}
+
+.navbar ul li {
+    margin: 0;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.search-form {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.search-input {
+    padding: 12px;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 50px 0 0 50px;
+    outline: none;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.search-input:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-button {
+    padding: 12px 20px;
+    background-color: #004080;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 50px 50px 0;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.search-button:hover {
+    background-color: #003366;
+    transform: scale(1.05);
+}
+
+/* Article List Styling */
+.artikel-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.artikel-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.artikel-item:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px);
+}
+
+.artikel-item h2 {
+    margin: 0 0 15px;
+    color: #004080;
+    font-size: 22px;
+}
+
+.artikel-item h2 a {
+    text-decoration: none;
+}
+
+.artikel-item h2 a:hover {
+    text-decoration: underline;
+}
+
+.artikel-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.artikel-detail {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+.artikel-detail h1 {
+    margin-bottom: 20px;
+    color: #004080;
+    font-size: 28px;
+}
+
+.artikel-detail p {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #004080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #003366;
+}
+
+
+
+.artikel-detail ol {
+    padding-left: 20px; 
+    line-height: 1.8; 
+    margin: 20px 0; 
+}
+
+.artikel-detail ol li {
+    margin-bottom: 10px; 
+    font-size: 18px; 
+    color: #333; 
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    color: #004080;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #004080;
+    color: #fff;
+}
+
+.pagination a.active {
+    background-color: #004080;
+    color: #fff;
+    border: 1px solid #004080;
+}
